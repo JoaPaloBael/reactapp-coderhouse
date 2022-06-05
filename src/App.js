@@ -1,21 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-
 function App() {
   return (
+    // className es lo mismo que class. Lo que pasa es que class es palabra reservada de JS
+    // Todas las etiquetas se tienen que cerrar. incluso img. Puedo escribir <img/>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>HOLA MUNDO!!</h1>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hola mundo!!!</h1>
     </div>
   );
 }
