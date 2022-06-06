@@ -1,4 +1,4 @@
-import "./Reset.css";
+import "./style.scss";
 import Navbar from "./components/Navbar/Navbar";
 function App() {
   return (
