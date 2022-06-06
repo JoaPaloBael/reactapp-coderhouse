@@ -1,0 +1,21 @@
+.CarouselProductos{
+    height: 45vh;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .BoxProductos{
+        height: 40vh;
+        width: 75vw;
+        background-color: #c7c7c7;
+        border-radius: 1rem;
+        display: flex;
+        margin: 1rem;
+        .CardProducto{
+            width: 250px;
+            background-color: cadetblue;
+            margin: 1rem;
+        }
+    }
+}

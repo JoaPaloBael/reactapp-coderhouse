@@ -1,12 +1,12 @@
 import "./style.scss";
 import Navbar from "./components/Navbar/Navbar";
-import Circles from "./components/Circles/Circles";
+import CarouselProductos from "./components/CarouselProductos/CarouselProductos";
 
 function App() {
   return (
     <div className="body">
     <Navbar />
-    <Circles/>
+    <CarouselProductos/>
     </div>
   );
 }
