@@ -12,10 +12,15 @@
         border-radius: 1rem;
         display: flex;
         margin: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
         .CardProducto{
             width: 250px;
             background-color: cadetblue;
             margin: 1rem;
+            height: 80%;
         }
     }
 }
