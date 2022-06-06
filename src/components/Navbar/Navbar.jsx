@@ -1,4 +1,5 @@
 import logo from '../../resources/img/Recurso 2.svg'
+import CartIcon from './CartIcon/CartIcon';
 import NavLink from './NavLink/NavLink';
 function Navbar (){
     return(
@@ -9,6 +10,7 @@ function Navbar (){
             <NavLink title="Inicio"/>
             <NavLink title="Promociones"/>
             <NavLink title="Productos"/>
+            <CartIcon color="#1c3144"/>
           </ul>
         </nav>
     )
