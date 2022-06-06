@@ -1,10 +1,17 @@
 import React from "react";
+import logo from '../../resources/img/logo-blanco.png'
+import "./Navbar.css";
 function Navbar (){
     return(
-        <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-      </nav>
+        <nav className="nav">
+          <a href="index.html"><img src={logo} alt="Market"/></a>
+
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Carrito</a></li>
+          </ul>
+        </nav>
     )
 }
 
