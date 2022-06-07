@@ -1,19 +1,11 @@
 
 import ShoppingBagTwoToneIcon from '@mui/icons-material/ShoppingBagTwoTone';
 
-export default function CartIcon(props) {
-
-    function MouseOver(e) {
-        e.target.style.color= '#a2aebb';
-    }
-    function MouseOut(e){
-        e.target.style.color="#FFFC99";
-      }
+export default function CartIcon() {
   return (
-        <li className='cartIcon' onMouseOver={MouseOver} onMouseOut={MouseOut}>
+        <div className='cartIcon'>
             <a href="index.html"><ShoppingBagTwoToneIcon/></a>
-        </li>
-
+        </div>
   )
 }
 

@@ -1,49 +1,31 @@
-.nav{
+.nav {
+    background: linear-gradient(to bottom, #ff8229 80%, #fa964e);
     display: flex;
-    background: linear-gradient(to bottom, #ff8229 80%, #fa964e) ;
-    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
+    justify-content: space-between;
     width: 100vw;
-    img {
-        height: 4rem;
-    }
-    ul {
-        display: flex;
-        align-items: center;
-        li {
-            list-style: none;
-            padding: 1rem .5rem;
-            align-items: center;
-            a {
-                text-decoration: none;
-                font-weight: 600;
-                color: #FFFC99;
-            }
-        }
-    }
-}
-
-@media (min-width:768px) {
-    .nav {
-        height: 6.5rem;
-        justify-content: center;
-        padding: .5rem;
+    padding: .5rem 4rem;
+    .NavLogo {
         img {
-            height: 5rem;
-            padding-left: 1rem;
+            height: 4rem;
         }
-        ul{
-            li{
-                a{
-                    color: white;
-                    &:hover {
-                        transition: .35s;
-                        color: #FFFC99;
-                    }
-                }
+    }
+    .NavSearch{
+        input[type="search"]{
+            border-radius: 5px;
+            padding: .3rem;
+            width: 275px;
+        }
+    }
+    .cartIcon {
+        svg {
+            font-size: 3.5rem;
+            color: #FFFC99;
+
+            &:hover {
+                color: white;
             }
         }
-
     }
+
 }
