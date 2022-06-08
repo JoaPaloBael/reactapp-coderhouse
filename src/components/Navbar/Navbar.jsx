@@ -1,5 +1,4 @@
 import CartIcon from './CartIcon/CartIcon';
-import NavLink from './NavLink/NavLink';
 import NavLogo from './NavLogo/NavLogo';
 import NavSearch from './NavSearch/NavSearch';
 function Navbar (){
