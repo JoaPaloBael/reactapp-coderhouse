@@ -1,5 +1,5 @@
 //rfc
-export default function NavLink (props) {
+export default function NavLinkBar (props) {
     console.log(props);
   return (
     <li ><a href="index.html">{props.title}</a></li>

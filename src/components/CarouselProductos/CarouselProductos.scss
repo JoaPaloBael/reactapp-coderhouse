@@ -1,12 +1,10 @@
 .CarouselProductos{
-    height: 45vh;
     background-color: beige;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     .BoxProductos{
-        height: 40vh;
         width: 75vw;
         background-color: #c7c7c7;
         border-radius: 1rem;
@@ -14,13 +12,46 @@
         margin: 1rem;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         overflow: hidden;
         .CardProducto{
-            width: 250px;
+            width: 200px;
+            min-height: 335px;
             background-color: cadetblue;
             margin: 1rem;
             height: 80%;
+            display: flex;
+            flex-direction: column;
+            border-radius: 15px;
+            align-items: center;
+            img{
+                max-width: 200px;
+                padding: 10px;
+                border-radius: 10%;
+            }
+            .prodName {
+                flex: 1;
+                padding-top: 10px;
+            }
+            .ItemCount{
+                padding: 10px;
+                div{
+                    display: flex;
+                    justify-content: center;
+                    .btnCount{
+                        padding: .2rem;
+                        width: 40px;
+                        border-radius: 5px;
+                        border-style: none;
+                    }
+                    span{
+                        padding: .4rem;
+                    }
+                }
+                .btnCarrito{
+                    margin: 15px;
+                }
+            }
         }
     }
 }
