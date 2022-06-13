@@ -3,8 +3,6 @@ import React, { useState } from "react";
 import ItemCount from './ItemCount/ItemCount';
 
 export default function CardProduct(props) {
-
-
   return (
     <div className="CardProducto">
       <img src={props.prodImg} alt={props.prodName}/>
