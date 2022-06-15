@@ -1,0 +1,34 @@
+.ItemListContainer {
+    width: 90vw;
+    background-color: #c7c7c7;
+    border-radius: 1rem;
+    display: flex;
+    margin: 1rem auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    overflow: hidden;
+
+    .counter {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .btnCount {
+            padding: .2rem;
+            width: 40px;
+            border-radius: 5px;
+            border-style: none;
+        }
+
+        span {
+            padding: .4rem;
+        }
+    }
+
+    .btnCarrito {
+        margin: 15px;
+    }
+}
