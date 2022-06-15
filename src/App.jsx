@@ -13,7 +13,7 @@ function App() {
     <ItemListContainer>
         <ItemCount initial={1} stock={9} onAdd={onAdd}/>
         <ItemCount initial={1} stock={7} onAdd={onAdd}/>
-        <ItemCount initial={1} stock={3} onAdd={onAdd}/>
+        <ItemCount initial={5} stock={3} onAdd={onAdd}/>
       </ItemListContainer>
     </div>
   );
