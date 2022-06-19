@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 export default function ItemCount ({initial, stock, onAdd}) {
     const [count, setCount] = useState(parseInt(initial));
 
+
     const increase = () => {
         if(count < stock) {
             setCount(count + 1);
@@ -29,7 +30,7 @@ export default function ItemCount ({initial, stock, onAdd}) {
                 <span>{count}</span>
                 <button className='btnCount' onClick={increase}>+</button>
             </div>
-            <button className='btnCarrito' disabled={stock<=0} onClick={() => onAdd(count)} >Agregar al carrito</button>
+            <button className='btnCarrito' onClick={() => onAdd(count)} >Agregar al carrito</button>
         </div>
     )
 }
