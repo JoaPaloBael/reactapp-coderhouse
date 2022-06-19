@@ -4,14 +4,18 @@ export default function ItemCount ({initial, stock, onAdd}) {
     const [count, setCount] = useState(parseInt(initial));
 
     const increase = () => {
-        setCount (
-            count<stock? count + 1 : alert("No hay stock")
-            );
+        if(count < stock) {
+            setCount(count + 1);
+        } else {
+            alert ("Alcanzaste el máximo de unidades disponibles");
+        }
     }
     const decrease = () => {
-        setCount (
-            count>initial? count - 1 : alert(`Debes comprar al menos ${initial} unidad`)
-            );
+        if(count > initial) {
+            setCount(count - 1);
+        } else {
+            alert ("Debes comprar al menos una unidad");
+        }
     }
     useEffect(() => {
         setCount(parseInt(initial));
@@ -21,7 +25,7 @@ export default function ItemCount ({initial, stock, onAdd}) {
     return(
         <div className='counter'>
             <div>
-                <button className='btnCount' onClick={decrease}>-</button>
+                <button className='btnCount' onClick={decrease} >-</button>
                 <span>{count}</span>
                 <button className='btnCount' onClick={increase}>+</button>
             </div>
