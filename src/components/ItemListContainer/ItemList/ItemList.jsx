@@ -8,7 +8,7 @@ export default function ItemList({articulos}) {
           // Mapeo los articulos
             articulos.map((item)=>{
                 return (
-                    <Item item={item}/>
+                    <Item item={item} key={item.id}/>
                 )
             })
         }
