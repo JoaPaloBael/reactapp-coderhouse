@@ -8,6 +8,22 @@
     justify-content: space-around;
     align-items: flex-start;
     overflow: hidden;
+    .itemList{
+        display: flex;
+        max-width: 880px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        .item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 200px;
+            text-align: center;
+            img{
+                max-width: 150px;
+            }
+        }
+    }
 
     .counter {
         padding: 10px;

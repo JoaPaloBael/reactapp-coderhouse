@@ -12,12 +12,10 @@ export default function ItemCount ({initial, stock, onAdd}) {
         }
     }
     const decrease = () => {
-        if(count > initial) {
-            setCount(count - 1);
-        } else {
-            alert ("Debes comprar al menos una unidad");
-        }
+        //Sugar sintax
+        count > initial ? setCount(count - 1) : alert (`Debes comprar al menos ${initial} unidades`);
     }
+
     useEffect(() => {
         setCount(parseInt(initial));
       }, [initial]);
@@ -35,6 +33,3 @@ export default function ItemCount ({initial, stock, onAdd}) {
     )
 }
 
-
-//- disabled={count <= 1}
-//+ disabled={count>= stock}
