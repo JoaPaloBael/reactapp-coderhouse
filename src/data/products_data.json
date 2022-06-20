@@ -1,11 +1,11 @@
-[{"id":1,"name":"Lechuga Romana","price":"95","stock":8,"img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738292/primer-app-react/lechuga-romana_mmwfwp.jpg"},
-{"id":2,"name":"Cebolla","price":"72.73","stock":1049, "img": "./img/products/cebolla.jpg"},
-{"id":3,"name":"Tomates de la huerta","price":"48.48","stock":537, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738291/primer-app-react/three-tomatoes_qcebsj.jpg"},
-{"id":4,"name":"Wine - Port Late Bottled Vintage","price":"127.16","stock":991},
-{"id":5,"name":"Muffin Orange Individual","price":"93.11","stock":1443},
-{"id":6,"name":"Madeira","price":"82.41","stock":103},
-{"id":7,"name":"Soup Campbells - Tomato Bisque","price":"143.37","stock":1296},
-{"id":8,"name":"Syrup - Monin - Passion Fruit","price":"43.67","stock":216},
-{"id":9,"name":"Wine - Black Tower Qr","price":"107.19","stock":761},
-{"id":10,"name":"Pears - Fiorelle","price":"94.68","stock":693}
+[{"id":1,"name":"Lechuga Romana","price":"360","stock":25,"img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738292/primer-app-react/lechuga-romana_mmwfwp.jpg"},
+{"id":2,"name":"Cebolla","price":"119","stock":1049, "img": "./img/products/cebolla.jpg"},
+{"id":3,"name":"Tomates","price":"399","stock":537, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738291/primer-app-react/three-tomatoes_qcebsj.jpg"},
+{"id":4,"name":"Ajo","price":"100","stock":991, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/ajo_waczyu.jpg"},
+{"id":5,"name":"Choclo","price":"250","stock":1443, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/choclo_zaqvfq.jpg"},
+{"id":6,"name":"Morron Rojo","price":"325","stock":103, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/morron-rojo_y8hpwn.jpg"},
+{"id":7,"name":"Papa blanca","price":"75","stock":1296, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/papa-blanca_vhc5g2.jpg"},
+{"id":8,"name":"Remolacha","price":"79","stock":216, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/remolacha_mqezhs.jpg"},
+{"id":9,"name":"Zanahoria","price":"65","stock":761, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/zanahorias_x9npry.jpg"},
+{"id":10,"name":"Zucchini","price":"130","stock":693, "img": "https://res.cloudinary.com/dex7mgwz9/image/upload/v1655738783/primer-app-react/zucchini_lswcjh.jpg"}
 ]
