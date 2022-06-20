@@ -12,7 +12,7 @@ export default function ItemListContainer() {
       const traerProductos = new Promise((res, rej) => {
           setTimeout(() => {
               res(productData);
-          }, 2000);
+          }, 1500);
       })
       //Indico que hacer con la promesa que traigo
       traerProductos

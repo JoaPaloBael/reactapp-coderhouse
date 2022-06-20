@@ -52,15 +52,22 @@
     .increase{
         background-color: #2f982f;
         color: white;
+        font-weight: bold;
+        &:hover{
+            background-color: lighten($color: #2f982f, $amount: 10);
+        }
         &:active{
-            background-color: darken($color: #2f982f, $amount: 10);
+            background-color: #2f982f;
         }
     }
     .decrease{
-        background-color: #e4614d;
+        background-color: #e97426;
         color: white;
+        &:hover{
+            background-color: lighten($color: #e4614d, $amount: 5);
+        }
         &:active{
-            background-color: darken($color: #e4614d, $amount: 10);
+            background-color: #e4614d;
         }
     }
     .btnCarrito {
