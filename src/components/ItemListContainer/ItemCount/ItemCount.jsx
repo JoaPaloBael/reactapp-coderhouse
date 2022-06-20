@@ -24,9 +24,9 @@ export default function ItemCount ({initial, stock, onAdd}) {
     return(
         <div className='counter'>
             <div>
-                <button className='btnCount' onClick={decrease} >-</button>
+                <button className='btnCount decrease' onClick={decrease} >-</button>
                 <span>{count}</span>
-                <button className='btnCount' onClick={increase}>+</button>
+                <button className='btnCount increase' onClick={increase}>+</button>
             </div>
             <button className='btnCarrito' onClick={() => onAdd(count)} >Agregar al carrito</button>
         </div>

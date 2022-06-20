@@ -49,7 +49,20 @@
             padding: .4rem;
         }
     }
-
+    .increase{
+        background-color: #2f982f;
+        color: white;
+        &:active{
+            background-color: darken($color: #2f982f, $amount: 10);
+        }
+    }
+    .decrease{
+        background-color: #e4614d;
+        color: white;
+        &:active{
+            background-color: darken($color: #e4614d, $amount: 10);
+        }
+    }
     .btnCarrito {
         margin: 15px;
     }
