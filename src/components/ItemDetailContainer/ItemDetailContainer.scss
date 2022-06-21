@@ -1,0 +1,11 @@
+.itemDetailContainer{
+    max-width: 80vw;
+    background-color: #c7c7c7;
+    min-height: 80vh;
+    margin: 2rem auto;
+    border-radius: 15px;
+    .itemDetail{
+        display: flex;
+        justify-content: space-around;
+    }
+}

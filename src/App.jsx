@@ -1,13 +1,15 @@
 import "./style.scss";
 import Navbar from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+// import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
 
 function App() {
 
   return (
     <div className="body">
     <Navbar />
-    <ItemListContainer/>
+    {/* <ItemListContainer/> */}
+    <ItemDetailContainer greeting={"Hola Products Detail!"}/>
     </div>
   );
 }
