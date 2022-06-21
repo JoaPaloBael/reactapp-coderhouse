@@ -12,13 +12,12 @@ export default function ItemListContainer() {
       const traerProductos = new Promise((res, rej) => {
           setTimeout(() => {
               res(productData);
-          }, 1500);
+          }, 2000);
       })
       //Indico que hacer con la promesa que traigo
       traerProductos
       .then((data)=>{
           setProducts(data);
-
       })
   }, []);
 

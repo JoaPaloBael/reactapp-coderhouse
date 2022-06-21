@@ -1,13 +1,19 @@
 import React from 'react';
-export default function ItemDetail() {
+import ItemCount from '../../ItemListContainer/ItemCount/ItemCount';
+
+export default function ItemDetail({item}) {
+    const onAdd = (count) => {
+        console.log(`compraste ${count} unidades`);
+      }
 
   return (
-    <div className='itemDetail'>
-        <img src="https://place-hold.it/350x400" alt="texto" />
-        <div className=''>
-            <h1>Marca producto</h1>
-            <h2>Titulo producto</h2>
-            <h3>Precio</h3>
+    <div className='itemsDetail'>
+        <img src={item.img} alt="texto" />
+        <div className='itemDetail'>
+            <h1>{item.brand}</h1>
+            <h2>{item.name}</h2>
+            <h3>${item.price} ARS</h3>
+            <ItemCount onAdd={onAdd} initial={item.initial} stock={item.stock}/>
         </div>
     </div>
   )

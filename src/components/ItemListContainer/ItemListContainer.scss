@@ -8,69 +8,79 @@
     justify-content: space-around;
     align-items: flex-start;
     overflow: hidden;
-    .itemList{
-        display: flex;
-        max-width: 1150px;
-        flex-wrap: wrap;
-        margin: 0 auto;
-        justify-content: center;
-        .item{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-            width: 250px;
-            text-align: center;
-            background-color: white;
-            border-radius: 5px;
-            margin: 1rem;
-            img{
-                max-width: 150px;
-            }
-        }
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 1rem;
+
+    img {
+        max-width: 150px;
+    }
+}
+
+.itemList {
+    display: flex;
+    max-width: 1150px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.counter {
+    justify-self: flex-end;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .btnCount {
+        padding: .2rem;
+        width: 40px;
+        border-radius: 5px;
+        border-style: none;
     }
 
-    .counter {
-        justify-self: flex-end;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        .btnCount {
-            padding: .2rem;
-            width: 40px;
-            border-radius: 5px;
-            border-style: none;
-        }
-
-        span {
-            padding: .4rem;
-        }
+    span {
+        padding: .4rem;
     }
-    .increase{
+}
+
+.increase {
+    background-color: #2f982f;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+        background-color: lighten($color: #2f982f, $amount: 10);
+    }
+
+    &:active {
         background-color: #2f982f;
-        color: white;
-        font-weight: bold;
-        &:hover{
-            background-color: lighten($color: #2f982f, $amount: 10);
-        }
-        &:active{
-            background-color: #2f982f;
-        }
     }
-    .decrease{
-        background-color: #e97426;
-        color: white;
-        &:hover{
-            background-color: lighten($color: #e4614d, $amount: 5);
-        }
-        &:active{
-            background-color: #e4614d;
-        }
+}
+
+.decrease {
+    background-color: #e97426;
+    color: white;
+
+    &:hover {
+        background-color: lighten($color: #e4614d, $amount: 5);
     }
-    .btnCarrito {
-        margin: 15px;
+
+    &:active {
+        background-color: #e4614d;
     }
+}
+
+.btnCarrito {
+    margin: 15px;
 }
