@@ -20,8 +20,7 @@ function Navbar (){
         <nav className='navCategories'>
           <ul>
             <li><Link to="/">INICIO</Link></li>
-            <li><Link to="/detalle">DETALLE</Link></li>
-            <li><Link to="/">LINK</Link></li>
+            <li><Link to="/">PROMOCIONES</Link></li>
             <li><Link to="/">LINK</Link></li>
             <li><Link to="/">LINK</Link></li>
           </ul>
