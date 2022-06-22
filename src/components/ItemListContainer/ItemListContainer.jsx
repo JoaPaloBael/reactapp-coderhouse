@@ -28,7 +28,7 @@ export default function ItemListContainer() {
       .then((data)=>{
           setProducts(data);
       })
-  }, []);
+  }, [categoryId]);
 
   // console.log(products);
 
