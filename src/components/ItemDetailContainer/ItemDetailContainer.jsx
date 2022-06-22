@@ -9,8 +9,8 @@ export default function ItemDetailContainer() {
     const [product, setProduct] = useState({});
 
     //Routing - Params
-    const { itemId } = useParams();
-    console.log("parametros: ", itemId);
+    const { id } = useParams();
+    console.log("parametros: ", id);
 
 
     // Genero un efecto para crear una "falsa promesa"
@@ -18,7 +18,7 @@ export default function ItemDetailContainer() {
         const traerProducto = new Promise((resolve, reject) => {
             setTimeout(() => {
                 // Como validar los ID
-                const itemNumId = parseInt(itemId)
+                const itemNumId = parseInt(id)
                 const itemFound = productData.find(item => {
                     return item.id === itemNumId;
                 })
@@ -30,7 +30,7 @@ export default function ItemDetailContainer() {
     .then((data)=>{
         setProduct(data);
     })
-}, [itemId]);
+}, [id]);
 
 
   return (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export default function Item({item}) {
     //Formar la url
-    const urlDetalle = `/detalle/${item.id}`
+    const urlDetalle = `/item/${item.id}`
     // console.log(item);
     const onAdd = (count) => {
         console.log(`compraste ${count} unidades`);

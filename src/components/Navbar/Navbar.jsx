@@ -20,9 +20,11 @@ function Navbar (){
         <nav className='navCategories'>
           <ul>
             <li><Link to="/">INICIO</Link></li>
-            <li><Link to="/">PROMOCIONES</Link></li>
-            <li><Link to="/">LINK</Link></li>
-            <li><Link to="/">LINK</Link></li>
+            <li><Link to="/promociones">PROMOCIONES</Link></li>
+            <li><Link to="/category/hojas">Hojas verdes</Link></li>
+            <li><Link to="/category/hortalizas">Hortalizas</Link></li>
+            <li><Link to="/category/tuberculos">Tuberculos</Link></li>
+            <li><Link to="/category/frutas">Frutas</Link></li>
           </ul>
         </nav>
       </div>
