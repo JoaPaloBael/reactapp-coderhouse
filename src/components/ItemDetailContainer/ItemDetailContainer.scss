@@ -3,13 +3,17 @@
     background-color: #c7c7c7;
     margin: 2rem auto;
     border-radius: 15px;
+    padding: 2rem;
     .itemsDetail{
         display: flex;
         justify-content: center;
         padding: 2rem;
+        background-color: white;
+        border-radius: 10px;
          img{
             margin: 0rem 5rem 0 0;
             height: 250px;
+            border-radius: 3%;
          }
          .itemDetail{
             display: flex;
@@ -21,7 +25,6 @@
             background-color: white;
             text-align: center;
             border-radius: 5px;
-            width: 250px;
             h1{
                 font-size: 1rem;
             }
@@ -33,5 +36,21 @@
                 font-size: 1.5rem;
             }
          }
+    }
+}
+
+@media (max-width: 950px) {
+    .itemDetailContainer{
+        max-width: 80vw;
+        .itemsDetail{
+            flex-direction: column;
+            align-items: center;
+            margin: 2rem;
+            img{
+                margin: 0;
+                height: 170px;
+
+            }
+        }
     }
 }

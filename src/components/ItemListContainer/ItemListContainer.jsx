@@ -26,6 +26,7 @@ export default function ItemListContainer() {
   return (
     <div className='ItemListContainer'>
       <ItemList articulos={products}/>
+      <a href='/detalle'>Ir a URL detalle</a>
     </div>
   )
 }

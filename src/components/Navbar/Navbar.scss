@@ -57,6 +57,22 @@
     display: none;
 }
 
+.navCategories {
+    background-color: #fec344;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li{
+            padding: 1rem;
+            list-style: none;
+            a{
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
 
     .nav-xxl {

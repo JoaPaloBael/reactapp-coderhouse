@@ -1,8 +1,14 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
 import ItemDetail from './ItemDetail/ItemDetail';
 import productData from '../../data/products_data.json';
+import { useParams } from 'react-router-dom';
 
-export default function ItemDetailContainer({greeting}) {
+export default function ItemDetailContainer() {
+    //Routing - Params
+    const { id } = useParams();
+    console.log(id);
+
+
     //Voy a llamar a un unico producto
     // Genero el estado para luego guardar ahí los detalles
     const [product, setProduct] = useState({});
@@ -11,7 +17,8 @@ export default function ItemDetailContainer({greeting}) {
     useEffect(() =>{
         const traerProducto = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(productData[1])
+                let itemId = parseInt(id);
+                resolve(productData[itemId]);
             }, 2000);
         })
     //Indico que hacer con la promesa que traigo

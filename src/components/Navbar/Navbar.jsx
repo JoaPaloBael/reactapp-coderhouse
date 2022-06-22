@@ -1,6 +1,7 @@
 import CartIcon from './CartIcon/CartIcon';
 import NavLogo from './NavLogo/NavLogo';
 import NavSearch from './NavSearch/NavSearch';
+import { Link } from 'react-router-dom';
 function Navbar (){
     return(
       <div>
@@ -15,6 +16,15 @@ function Navbar (){
             <NavSearch/>
             <CartIcon/>
           </div>
+        </nav>
+        <nav className='navCategories'>
+          <ul>
+            <li><Link to="/">INICIO</Link></li>
+            <li><Link to="/detalle">DETALLE</Link></li>
+            <li><Link to="/">LINK</Link></li>
+            <li><Link to="/">LINK</Link></li>
+            <li><Link to="/">LINK</Link></li>
+          </ul>
         </nav>
       </div>
     )
