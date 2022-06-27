@@ -1,13 +1,17 @@
 import React, {useState, useEffect} from 'react'
 import productData from '../../data/products_data.json';
 import ItemList from '../itemList/ItemList';
+import Spinner from '../spinner/Spinner';
 import { useParams } from 'react-router-dom';
 
 export default function ItemListContainer() {
+  // State productos
   const [products, setProducts] = useState([]);
+  //Renderizado condicional
+  const [isLoading, setIsLoading] = useState(true);
+  // Params de busqueda
   const {categoryId} = useParams();
-
-  // El useEffect se ejecuta luego del return
+  // useEffect productos
   useEffect(()=>{
       //Se ejecuta una sola vez. Es ideal para Apis o llamadas al backend.
       //Creo la promesa
@@ -27,14 +31,15 @@ export default function ItemListContainer() {
       traerProductos
       .then((data)=>{
           setProducts(data);
+          setIsLoading(false);
       })
   }, [categoryId]);
 
-  // console.log(products);
+
 
   return (
     <div className='ItemListContainer'>
-      <ItemList articulos={products}/>
+      {isLoading ? <Spinner/> : <ItemList articulos={products}/>}
     </div>
   )
 }

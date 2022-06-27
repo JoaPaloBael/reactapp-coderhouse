@@ -2,11 +2,14 @@ import React, {useState, useEffect} from 'react';
 import ItemDetail from '../itemDetail/ItemDetail';
 import productData from '../../data/products_data.json';
 import { useParams } from 'react-router-dom';
+import Spinner from '../spinner/Spinner';
 
 export default function ItemDetailContainer() {
     //Voy a llamar a un unico producto
     // Genero el estado para luego guardar ahí los detalles
     const [product, setProduct] = useState({});
+    //Renderizado condicional
+    const [isLoading, setIsLoading] = useState(true);
 
     //Routing - Params
     const { id } = useParams();
@@ -29,13 +32,15 @@ export default function ItemDetailContainer() {
     traerProducto
     .then((data)=>{
         setProduct(data);
+        setIsLoading(false);
     })
 }, [id]);
 
 
   return (
     <div className='itemDetailContainer'>
-        <ItemDetail item={product}/>
+        {isLoading ? <Spinner/> : <ItemDetail item={product}/>}
+
     </div>
   )
 }
