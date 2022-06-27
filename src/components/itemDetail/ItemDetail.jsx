@@ -1,5 +1,5 @@
 import React from 'react';
-import ItemCount from '../../ItemListContainer/ItemCount/ItemCount';
+import ItemCount from '../itemCount/ItemCount';
 
 export default function ItemDetail({item}) {
     const onAdd = (count) => {

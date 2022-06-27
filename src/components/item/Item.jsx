@@ -1,4 +1,4 @@
-import ItemCount from '../ItemCount/ItemCount';
+import ItemCount from '../itemCount/ItemCount';
 import { Link } from 'react-router-dom';
 
 export default function Item({item}) {

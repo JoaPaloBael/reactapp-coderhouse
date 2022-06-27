@@ -1,8 +1,8 @@
-import CartIcon from './CartIcon/CartIcon';
-import NavLogo from './NavLogo/NavLogo';
-import NavSearch from './NavSearch/NavSearch';
+import CartIcon from '../cartIcon/CartIcon';
+import NavLogo from '../navLogo/NavLogo';
+import NavSearch from '../navSearch/NavSearch';
 import { Link } from 'react-router-dom';
-function Navbar (){
+function NavBar (){
     return(
       <div>
         <nav className="nav nav-xxl">
@@ -31,4 +31,4 @@ function Navbar (){
     )
 }
 
-export default Navbar;
+export default NavBar;

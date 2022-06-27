@@ -1,8 +1,8 @@
 import "./style.scss";
-import Navbar from "./components/Navbar/Navbar";
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
-import Promociones from './Pages/Promociones';
+import NavBar from "./components/navBar/NavBar";
+import ItemListContainer from "./components/itemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/itemDetailContainer/ItemDetailContainer";
+import Promociones from './pages/Promociones';
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="body">
       <BrowserRouter>
-        <Navbar />
+        <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer/>}/>
           <Route path="/category/:categoryId" element={<ItemListContainer/>}/>
