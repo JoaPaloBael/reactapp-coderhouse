@@ -7,7 +7,7 @@ export default function ItemDetail({item}) {
 
     const onAdd = (count) => {
       setCant (count);
-        console.log(`compraste ${count} unidades`);
+      console.log(`compraste ${count} unidades`);
       }
 
   return (
@@ -21,7 +21,7 @@ export default function ItemDetail({item}) {
               cant === 0 ?(
                 <ItemCount onAdd={onAdd} initial={item.initial} stock={item.stock}/>
               ) : (
-                <Link to="/cart">Ir al carrito</Link>
+                <Link to="/cart"><button className='btnCarrito'>Ir al carrito</button> </Link>
               )
             }
         </div>

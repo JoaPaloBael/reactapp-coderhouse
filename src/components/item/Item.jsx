@@ -18,13 +18,12 @@ export default function Item({item}) {
         <Link to={urlDetalle}><img src={item.img} alt={item.name} /></Link>
         <h2>{item.name}</h2>
         <h3>$ {item.price} kg</h3>
-        {
-              cant === 0 ?(
-                <ItemCount onAdd={onAdd} initial={item.initial} stock={item.stock}/>
-              ) : (
-                <Link to="/cart">Ir al carrito</Link>
-              )
-            }
+        {cant === 0 ?(
+          <ItemCount onAdd={onAdd} initial={item.initial} stock={item.stock}/>
+        ) : (
+          <Link to="/cart"><button className='btnCarrito'>Ir al carrito</button> </Link>
+        )}
+
       </div>
   )
 }

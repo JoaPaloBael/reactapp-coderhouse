@@ -41,17 +41,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    .btnCount {
-        padding: .2rem;
-        width: 40px;
-        border-radius: 5px;
-        border-style: none;
-    }
-
     span {
         padding: .4rem;
     }
+}
+.btnCount {
+    padding: .2rem;
+    width: 40px;
+    border-radius: 5px;
+    border-style: none;
 }
 
 .increase {
