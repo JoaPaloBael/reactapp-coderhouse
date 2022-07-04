@@ -13,7 +13,7 @@ export default function ItemDetailContainer() {
 
     //Routing - Params
     const { id } = useParams();
-    console.log("parametros: ", id);
+    // console.log("parametros: ", id);
 
 
     // Genero un efecto para crear una "falsa promesa"
