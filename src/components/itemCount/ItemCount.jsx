@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react';
 export default function ItemCount ({initial, stock, onAdd}) {
     const [count, setCount] = useState(parseInt(initial));
 
-
     const increase = () => {
         if(count < stock) {
             setCount(count + 1);
@@ -24,7 +23,7 @@ export default function ItemCount ({initial, stock, onAdd}) {
     return(
         <div className='counter'>
             <div>
-                <button className='btnCount decrease' onClick={decrease}>-</button>
+                <button className='btnCount decrease' onClick={decrease} >-</button>
                 <span>{count}</span>
                 <button className='btnCount increase' onClick={increase}>+</button>
             </div>
